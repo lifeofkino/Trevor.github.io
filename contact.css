@@ -1,0 +1,134 @@
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px; 
+    }
+    .navbar-menu li {
+      margin: 0 2rem; 
+    }
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    .navbar {
+      padding: 5px; 
+    }
+    .navbar-menu li {
+      margin: 0 1rem; 
+    }
+  }
+  
+  
+  /* Nav bar */
+  
+  .navbar {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0ca79;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  .navbar-menu li {
+    margin: 0 4rem; 
+  }
+  
+  .navbar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .navbar-logo a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Class to apply transparency effect */
+  .navbar.transparent {
+    background-color: rgba(240, 202, 121, 0.717);
+  }
+  
+  /* Styles for the body */
+  
+  body {
+    background-color: #333;
+    padding-top: 50px; 
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 10% auto; /* Center the form vertically */
+    background-color: rgba(240, 202, 121, 0.717);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
