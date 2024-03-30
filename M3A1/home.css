@@ -1,0 +1,182 @@
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px; 
+  }
+  .navbar-menu li {
+    margin: 0 2rem; 
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 5px; 
+  }
+  .navbar-menu li {
+    margin: 0 1rem; 
+  }
+  .item {
+    width: 100%; 
+  }
+}
+
+
+/* Nav bar */
+
+.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0ca79;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+
+.navbar-menu li {
+  margin: 0 4rem; 
+}
+
+.navbar-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-logo a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Class to apply transparency effect */
+.navbar.transparent {
+  background-color: rgba(240, 202, 121, 0.717);
+}
+
+/* Styles for the body */
+
+body {
+  background-color: #333;
+  padding-top: 50px; 
+}
+
+h2 {
+  text-align: center; 
+  background-color: #f0ca79;
+  padding: 10px 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.content {
+  background-color: white;
+}
+
+/* First image */
+
+.image-container {
+  width: 80%;
+  height: 500px; /* Adjust the height to maintain aspect ratio */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+  border-radius: 50px; /* Increase the border-radius for more rounded edges */
+}
+
+
+.image-container img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; 
+}
+
+
+/* Framed containers for sale */
+.container {
+  display: flex;
+  justify-content: space-between; /* Ensure equal spacing between containers */
+  flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+  margin: 80px; /* Adjust the margin to bring the container in from the sides */
+}
+
+.item {
+  width: 40%; 
+  text-align: center;
+  border-radius: 10px; 
+  border: 2px solid #f0ca79; 
+  padding: 20px; 
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.item img {
+  width: 70%; 
+  height: auto;
+  border-radius: 8px; /* Rounded image corners */
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.item p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+
+
+
+
+/* Styles for the info page */
+.info-page main {
+  width: 70%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+.info-page .section {
+  margin-bottom: 30px;
+}
+
+.info-page h2 {
+  color: #333;
+  width: 30%; /* Set the width to 100% to occupy the entire width of the container */
+  text-align: center; /* Center-align the heading */
+  margin:auto auto 20px auto; /* Add some bottom margin to separate it from the paragraph */
+}
+
+.info-page p {
+  color: white;
+  width: 80%; /* Set the width to 80% */
+  margin: auto; /* Center-align the paragraph */
+  border-radius: 10px; 
+  border: 2px solid #f0ca79;
+  padding: 10px; /* Add padding for better spacing */
+}
+
+
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
